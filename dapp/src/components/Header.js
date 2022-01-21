@@ -12,23 +12,12 @@ function Header ({address, connect, sortOptions, setSortBy}) {
 
     return (
         <div className='header flex-centered'>
-        <h1>Tiger NFT</h1>
-        <div className='flex'>
-            <div>sort: </div>
-            <select onChange={(e) => setSort(e)} style={{marginLeft: 5, border: '1px solid black'}}>
-                {
-                sortOptions.map( (option, i) => (
-                    <option key={i}>
-                        {option}</option>
-                ))
-                }
-            </select>
-        </div>
-        <div onClick={connect} className='address'>{
+        <h1>RIPDAO</h1>
+        {/* <div onClick={connect} className='address'>{
             address ?
             `${address.slice(0,6)}...${address.slice(-4)}` :
-            'connect to metamask!'
-        }</div>
+            'connect wallet'
+        }</div> */}
         </div>
     )
 }
