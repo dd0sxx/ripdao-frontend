@@ -3,11 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: {
-        'img-0': "url('./public/assets/Website_0010_Background.png')",
-        'img-1': "url('./public/assets/Website_0009_Layer-1.png')",
-       },
        zIndex: {
+        '-12': '-12',
+        '-11': '-11',
         '-10': '-10',
         '-9': '-9',
         '-8': '-8',
