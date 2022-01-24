@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 import { ethers } from 'ethers';
 import '../style/app.css';
 import Header from './Header.js';
+import Background from './Background.js';
 import tigerNFTABI from '../assets/TigerNFT'
 import ChainMsg from './Modal.js'
 import BuyDialog from './BuyDialog.js'
@@ -71,6 +72,7 @@ function App() {
 
     return (
         <div className="app">
+        <Background />
         <Header 
         address={address} 
         // connect={connectToMetamask}
