@@ -1,5 +1,14 @@
 .background {
     position: absolute;
-    width: 100vw;
-    height: 3440px;
+    max-width:100%;
+    height: auto;
+}
+
+.bg-logo {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    left: 25%;
+    top: 15%;
 }

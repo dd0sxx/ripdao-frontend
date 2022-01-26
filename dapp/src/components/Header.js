@@ -12,7 +12,12 @@ function Header ({address, connect, sortOptions, setSortBy}) {
 
     return (
         <div className='header flex-centered'>
-        <h1>RIPDAO</h1>
+        <h1 className='z-10 p-10'>RIPDAO</h1>
+        <nav className='z-10 w-1/6 p-10 flex justify-between'>
+            <div>about</div>
+            <div>twitter</div>
+            <div>discord</div>
+        </nav>
         {/* <div onClick={connect} className='address'>{
             address ?
             `${address.slice(0,6)}...${address.slice(-4)}` :

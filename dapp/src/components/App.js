@@ -72,15 +72,16 @@ function App() {
 
     return (
         <div className="app">
-        <Background />
-        <Header 
-        address={address} 
-        // connect={connectToMetamask}
-        />
-    
-            <ChainMsg open={chainWarning} setOpen={setChainWarning}/>
-            {/* <BuyDialog currentlyBuying={currentlyBuying} setCurrentlyBuying={setCurrentlyBuying} contract={contract} address={address} signer={signer}/> */}
+            <Background />
+            <div>
+                <Header 
+                address={address} 
+                // connect={connectToMetamask}
+                />
+                <ChainMsg open={chainWarning} setOpen={setChainWarning}/>
+                {/* <BuyDialog currentlyBuying={currentlyBuying} setCurrentlyBuying={setCurrentlyBuying} contract={contract} address={address} signer={signer}/> */}
             </div>
+        </div>
         );
     }
 
